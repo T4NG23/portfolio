@@ -81,18 +81,6 @@ const experience = [
   },
 ];
 
-const education = [
-  {
-    title: "B.S. in Computer Science (Computer Science and Business Honors Program)",
-    description: "Lehigh University, Bethlehem, PA",
-    date: "Graduating 05/2027",
-    image: "/images/Lehigh Image.png",
-    gpa: "GPA: 3.11/4.00",
-    coursework: "Relevant Coursework: Programming & Data Structures, Systems Software, Algorithms, Software Engineering, Database Systems, Blockchain Algorithms & Systems"
-  },
-];
-
-
 const researchExperience = [
   {
     title: "Computer Vision Research Lead",
@@ -117,14 +105,6 @@ const leadership = [
   },
 ];
 
-const skills = {
-  languages: "Python, SQL (T-SQL), Node.js, JavaScript (React), Java, C++, HTML, CSS",
-  frameworks: "FastAPI, SQLAlchemy, GitHub, VS Code, Jupyter, Google Cloud Platform, MUNIS ERP, OpenSSL",
-  competencies: "Full-Stack Development, API Design, Database Optimization, Agile Development, Machine Learning, Computer Vision, Distributed Ledger Technology (DLT)",
-  interests: "Rowing, Cello, Strength Training, Outdoor Recreation",
-  github: "https://github.com/T4NG23"
-};
-
 const navbar = [
   {
     title: "About",
@@ -143,16 +123,8 @@ const navbar = [
     link: "work",
   },
   {
-    title: "Education",
-    link: "education",
-  },
-  {
     title: "Leadership",
     link: "leadership",
-  },
-  {
-    title: "Skills",
-    link: "skills",
   },
 ];
 
@@ -476,56 +448,6 @@ export default function Home() {
 
 
           <Element
-          name="education"
-          >
-            <h2 className="text-xl pt-10 font-semibold">Education</h2>
-            {education.map((item) => (
-              <div key={item.title} className="my-4">
-                <div
-                  className="border rounded-2xl p-4 bg-white dark:bg-card"
-                >
-                  <div className="md:flex justify-between items-start mb-3">
-                    <div className="flex items-center gap-x-4">
-                      <Image
-                        src={item.image}
-                        alt={item.title}
-                        width={100}
-                        height={100}
-                        className="rounded-md w-20"
-                      />
-
-                      <div className="">
-                        <h2 className="text-md font-semibold mt-4 md:mt-0">
-                          {item.title}
-                        </h2>
-                        <p className="text-muted-foreground">
-                          {item.description}
-                        </p>
-                        {item.gpa && (
-                          <p className="text-muted-foreground text-sm mt-1">
-                            {item.gpa}
-                          </p>
-                        )}
-                        {item.coursework && (
-                          <p className="text-muted-foreground text-sm mt-1">
-                            {item.coursework}
-                          </p>
-                        )}
-                      </div>
-                    </div>
-
-                    <div>
-                      <div className="text-muted-foreground text-sm mt-4 md:mt-0">
-                        {item.date}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </Element>
-
-          <Element
           name="research"
           >
             <h2 className="text-xl pt-10 font-semibold">Research Experience</h2>
@@ -610,28 +532,6 @@ export default function Home() {
                 </div>
               </div>
             ))}
-          </Element>
-
-          <Element
-          name="skills"
-          >
-            <h2 className="text-xl pt-10 font-semibold">Skills</h2>
-            <div className="border rounded-2xl p-4 bg-white dark:bg-card my-4">
-              <div className="space-y-3">
-                <div>
-                  <h3 className="text-sm font-semibold mb-1">Programming Languages:</h3>
-                  <p className="text-muted-foreground text-sm">{skills.languages}</p>
-                </div>
-                <div>
-                  <h3 className="text-sm font-semibold mb-1">Frameworks & Tools:</h3>
-                  <p className="text-muted-foreground text-sm">{skills.frameworks}</p>
-                </div>
-                <div>
-                  <h3 className="text-sm font-semibold mb-1">Core Competencies:</h3>
-                  <p className="text-muted-foreground text-sm">{skills.competencies}</p>
-                </div>
-              </div>
-            </div>
           </Element>
         </div>
       </motion.div>
