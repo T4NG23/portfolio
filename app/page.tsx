@@ -13,6 +13,14 @@ import { Link as ScrollLink, Element } from "react-scroll";
 
 const projects = [
   {
+    title: "DormDealz",
+    description: "Cisco and Redbull Sponsored 'Enhancing Student Life Through Innovation' Hackathon - Awarded 'Best Overall'. DormDealz: Study Hard. Spend Smart. An academic marketplace platform designed exclusively for Lehigh University students. Buy and sell textbooks, electronics, dorm essentials, and class-required items directly with fellow Mountain Hawks in a secure, monitored environment. Features include secure in-app messaging with reactions and threaded replies, AI-powered content moderation, smart filtering system, multi-image galleries, and Lehigh-branded design. Built with Flask backend, Jinja2 templating, and vanilla JavaScript for a seamless student-to-student marketplace experience.",
+    date: "11/2025",
+    image: "/images/DormDealz.png",
+    github: "https://github.com/T4NG23/DormDealz",
+    skills: ["Flask", "Python", "JavaScript", "Jinja2", "AI/ML", "REST API"],
+  },
+  {
     title: "MaestroBot",
     description: "Specialized Music Theory Tutor (Node.js CLI) - Conversational tutoring system using Node.js and OpenAI API. Developed a conversational tutoring system using Node.js and the OpenAI API, utilizing a System Role to establish the consistent 'MaestroBot' persona and managing conversation state via full history arrays for contextual, long-running discussions.",
     date: "10/2025",
