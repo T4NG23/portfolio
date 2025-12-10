@@ -13,6 +13,14 @@ import { Link as ScrollLink, Element } from "react-scroll";
 
 const projects = [
   {
+    title: "Phenomitor",
+    description: "Computer Vision Interviewee Detection - An AI-powered interview monitoring system that detects cheating behaviors during remote interviews using real-time computer vision and Google Gemini AI analysis. Phenomitor monitors webcam streams, detects suspicious eye movements (reading scripts, looking at notes), identifies physical cheating indicators (devices, notes, other people), and captures audio transcripts for comprehensive behavioral analysis. Features a 3-strike warning system before alerting the interviewer, with timestamped evidence and detailed behavioral analysis. Supports multiple analysis modes (Demo/Normal/Conservative) optimized for free-tier API constraints. Built with Next.js 15, React 19, TypeScript, Tailwind CSS, TensorFlow.js with MediaPipe for real-time face and pose detection, Web Speech API for transcription, and Google Gemini 2.5 Flash API for intelligent behavioral analysis.",
+    date: "12/2025",
+    image: "/images/phenom-applied-ai.webp",
+    github: "https://github.com/T4NG23/PhenomAI-CV-MVP",
+    skills: ["Next.js 15", "React 19", "TypeScript", "Tailwind CSS", "Google Gemini API", "TensorFlow.js", "MediaPipe", "Web Speech API", "Computer Vision", "AI/ML"],
+  },
+  {
     title: "DormDealz",
     description: "Cisco and Redbull Sponsored 'Enhancing Student Life Through Innovation' Hackathon - Awarded 'Best Overall'. DormDealz: Study Hard. Spend Smart. An academic marketplace platform designed exclusively for Lehigh University students. Buy and sell textbooks, electronics, dorm essentials, and class-required items directly with fellow Mountain Hawks in a secure, monitored environment. Features include secure in-app messaging with reactions and threaded replies, AI-powered content moderation, smart filtering system, multi-image galleries, and Lehigh-branded design. Built with Flask backend, Jinja2 templating, and vanilla JavaScript for a seamless student-to-student marketplace experience.",
     date: "11/2025",
@@ -360,9 +368,9 @@ export default function Home() {
                     <Image
                       src={project.image}
                       alt={project.title}
-                      width={100}
+                      width={150}
                       height={100}
-                      className="rounded-md w-16 h-16 flex-shrink-0"
+                      className="rounded-md w-24 h-16 flex-shrink-0"
                     />
                     
                     <div className="flex flex-col flex-1">
